@@ -9,4 +9,4 @@ export const dashboardRoutes: Routes = [
     { path: '', component: StatisticsComponent},
     { path: 'income-expense', component: IncomeExpenseComponent},
     { path: 'detail', component: DetailComponent},
-]
+];
