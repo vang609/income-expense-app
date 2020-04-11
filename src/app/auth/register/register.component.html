@@ -42,7 +42,18 @@
               <div class="form-group">
                 <button type="submit"
                         [disabled]="registerForm.invalid"
-                        class="btn btn-primary submit-btn btn-block">Create account</button>
+                        class="btn btn-primary submit-btn btn-block"
+                        *ngIf="!loading">
+                        Create account
+                </button>
+
+                <button type="button"
+                        [disabled]="true"
+                        class="btn btn-primary submit-btn btn-block"
+                        *ngIf="loading">
+                        <i class="fa fa-spin fa-sync"></i>
+                        Wait...
+                </button>
               </div>
               <div class="text-block text-center my-3">
                 <span class="text-small font-weight-semibold">Do you have an account?</span>
